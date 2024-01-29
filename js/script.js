@@ -148,7 +148,7 @@ playAgainButton.addEventListener("click", function () {
     getWord();
   
     // show the right UI elements
-    guessLetterButton.classList.remove("hide");
+    guessLetter.classList.remove("hide");
     playAgainButton.classList.add("hide");
     guessesRemainingElement.classList.remove("hide");
     guessedLettersElement.classList.remove("hide");
