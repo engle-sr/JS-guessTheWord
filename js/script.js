@@ -8,7 +8,7 @@ const message = document.querySelector(".message");
 const playAgainButton = document.querySelector(".play-again");
 
 let word = "magnolia";
-const guessedLetters = [];
+let guessedLetters = [];
 let guessesRemaining = 8;
 
 
@@ -134,7 +134,7 @@ const startOver = function() {
     guessButton.classList.add("hide");
     guessesRemainingElement.classList.add("hide");
     guessedLettersElement.classList.add("hide");
-    playAgainButton.classList.add("hide");
+    playAgainButton.classList.remove("hide");
 };
 
 playAgainButton.addEventListener("click", function () {
